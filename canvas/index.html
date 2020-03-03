@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ABOBE PHOTOZHAB</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		#canv {
+			width: 1000px; 
+			height: 800px; 
+			border: 1px solid black
+		}
+	</style>
+</head>
+<body>
+<div class="content" >
+<div class="main1" >
+	<img src="img/no-pryam.png" class="tool-button" id='no-pryam' alt="prymoyg">
+	<img src="img/pryam.png" class="tool-button" id='pryam' alt="prymoyg" alt="">
+
+
+</div>
+<div class="head">
+	<div class="tools">
+<!--		<button class="tool-button" id='brush'>Brush</button>-->
+		<img src="img/kist'.jpg" class="tool-button" id='brush' alt="kistochka">
+		<img src="img/clean.jpg" class="tool-button" id='clen' alt="clean">
+		<img src="img/mouse.png" class="tool-button" id='notbrush'>
+
+		<select id='size-select'>
+			<option>1</option>
+			<option>5</option>
+			<option>10</option>
+			<option>15</option>
+			<option>20</option>
+			<option>25</option>
+			<option>30</option>
+			<option>35</option>
+			<option>40</option>
+		</select>
+
+		<input type="color" id="color">
+	</div>
+
+
+	<div class="canv">
+		<canvas id="canv" width="1000" height="800"></canvas>
+	</div>
+	<div class="tools t1">
+		<div class="coordinates">
+			<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+			<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			<br>
+		</div>
+	</div>
+
+</div>
+<div class="main1" >
+	<img src="img/line.jpg" class="tool-button" id='line' alt="line">
+	<img src="img/krug.png" class="tool-button" id='krug' alt="krug">
+</div>
+</div>
+	<script src="script.js">
+
+	</script>
+</body>
+</html>
