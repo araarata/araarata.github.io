@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <div class="container-fluid">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="#"><h1>Aditii</h1></a>
+                <form class="form form-inline">
+                    <input class="search_input" type="search" aria-label="Search">
+                    <button class=" search_btn" type="submit"> <img class="img_search" src="img/search.png" alt="search"> </button>
+                    <div class="form__cart">
+                    <img class="cart" src="img/cart.png" alt="cart" onclick="noneBlock()">
+                    <div class="cart__price">
+                        <h4>$0</h4> </div>
+                    <div id="cart_of_products">
+                        <div class="cart_of_products_strelka"></div>
+                        <div class="cart_of_products_items">
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="menu">
+                   <div class="menu__menu"><button onclick="menu()">Menu</button></div>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"> <a class="nav-link active" href="#">home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">sale</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">handbags</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">wallets</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">accessories</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">mens store</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">shoes</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">vintage</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">services</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">contact us</a> </li>
+                </ul>
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#carouselExampleCaptions" data-slide-to="0"> </li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"> </li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"> </li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"> </li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="4"> </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-item1"><img src="img/carousel_img.png" class="carousel_img" alt="carousel_img">
+                                <div class="carousel-item__text">
+                                    <h5>Cowhide Standard Crew</h5>
+                                    <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
+                                    <button>Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item1"><img src="img/carousel_img.png" class="carousel_img" alt="carousel_img">
+                                <div class="carousel-item__text">
+                                    <h5>Cowhide Standard Crew</h5>
+                                    <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
+                                    <button>Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item1"><img src="img/carousel_img.png" class="carousel_img" alt="carousel_img">
+                                <div class="carousel-item__text">
+                                    <h5>Cowhide Standard Crew</h5>
+                                    <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
+                                    <button>Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item1"><img src="img/carousel_img.png" class="carousel_img" alt="carousel_img">
+                                <div class="carousel-item__text">
+                                    <h5>Cowhide Standard Crew</h5>
+                                    <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
+                                    <button>Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item1"><img src="img/carousel_img.png" class="carousel_img" alt="carousel_img">
+                                <div class="carousel-item__text">
+                                    <h5>Cowhide Standard Crew</h5>
+                                    <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
+                                    <button>Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                </div>
+            </section>
+            <section class="products">
+                <ul class="products__some">
+                    <li> <img src="img/products%20some_1.png" alt="product_1">
+                        <div>
+                            <h3>branded <br>shoes</h3>
+                            <button><a href="#">shop</a></button>
+                        </div>
+                    </li>
+                    <li> <img src="img/products%20some_2.png" alt="product_1">
+                        <div>
+                            <h3>branded <br>tshirts</h3>
+                            <button><a href="#">shop</a></button>
+                        </div>
+                    </li>
+                    <li> <img src="img/products%20some_3.png" alt="product_1">
+                        <div>
+                            <h3>branded <br>shoes</h3>
+                            <button><a href="#">shop</a></button>
+                        </div>
+                    </li>
+                </ul>
+                <h2 class="products__featured">featured products</h2>
+                <div class="products__our">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__ul">
+                <ul>
+                    <li> <a href="#">featured sale</a> </li>
+                    <li> <a href="#">Alexis Hudson</a> </li>
+                    <li> <a href="#">American Apparel</a> </li>
+                    <li> <a href="#">Ben Sherman</a> </li>
+                    <li> <a href="#">Big Buddha</a> </li>
+                    <li> <a href="#">Chanel</a> </li>
+                    <li> <a href="#">Christian Audigier</a> </li>
+                    <li> <a href="#">Coach</a> </li>
+                    <li> <a href="#">Cole Haan</a> </li>
+                </ul>
+                <ul>
+                    <li> <a href="#">mens store</a> </li>
+                    <li> <a href="#">Alexis Hudson</a> </li>
+                    <li> <a href="#">American Apparel</a> </li>
+                    <li> <a href="#">Ben Sherman</a> </li>
+                    <li> <a href="#">Big Buddha</a> </li>
+                    <li> <a href="#">Chanel</a> </li>
+                    <li> <a href="#">Christian Audigier</a> </li>
+                    <li> <a href="#">Coach</a> </li>
+                    <li> <a href="#">Cole Haan</a> </li>
+                </ul>
+                <ul>
+                    <li> <a href="#">women store</a> </li>
+                    <li> <a href="#">Alexis Hudson</a> </li>
+                    <li> <a href="#">American Apparel</a> </li>
+                    <li> <a href="#">Ben Sherman</a> </li>
+                    <li> <a href="#">Big Buddha</a> </li>
+                    <li> <a href="#">Chanel</a> </li>
+                    <li> <a href="#">Christian Audigier</a> </li>
+                    <li> <a href="#">Coach</a> </li>
+                    <li> <a href="#">Cole Haan</a> </li>
+                </ul>
+                <ul>
+                    <li> <a href="#">quick links</a> </li>
+                    <li> <a href="#">Alexis Hudson</a> </li>
+                    <li> <a href="#">American Apparel</a> </li>
+                    <li> <a href="#">Ben Sherman</a> </li>
+                    <li> <a href="#">Big Buddha</a> </li>
+                    <li> <a href="#">Chanel</a> </li>
+                    <li> <a href="#">Christian Audigier</a> </li>
+                    <li> <a href="#">Coach</a> </li>
+                    <li> <a href="#">Cole Haan</a> </li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <h4>Copyright  &copy; 2020 Yanakhmetov Roman</h4> </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
