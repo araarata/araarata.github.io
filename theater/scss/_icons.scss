@@ -1,0 +1,20 @@
+.fa {
+	color: white;
+	@include size(md) {
+		margin-bottom: 10px;
+		text-align: center;
+		height: 70px;
+		font-size: 40px;
+	}
+	@include size(lg) {
+		height: 80px;
+		font-size: 40px;
+	}
+	@include size(xl) {
+		height: 70px;
+		font-size: 40px;
+	}
+	&:hover {
+		text-shadow: 0 0 10px orange;
+	}
+}

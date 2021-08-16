@@ -1,0 +1,23 @@
+@mixin size($a){
+	@if $a==xl{
+		@media (min-width: 1200px) {
+			@content;
+		}
+	}
+	@else if $a==lg {
+		@media (min-width: 992px) and (max-width: 1199px) {
+			@content;
+		}
+	}
+	@else if $a==md{
+		@media (min-width: 768px) and (max-width: 991px) {
+			@content;
+		}
+	}
+	@else if $a==sm{
+		@media (min-width: 576px) and (max-width: 767px) {
+			@content;
+		}
+	}
+	
+}

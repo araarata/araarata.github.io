@@ -1,0 +1,64 @@
+
+.blockfour{
+	height: 550px;
+	background-image: url("/img/blockfour.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	@include size(xl){
+		padding: 0 80px;
+		max-width: 1200px;
+	}
+	@include size(lg){
+		padding: 0 80px;
+	}
+	@include size(md){
+		padding: 0 30px;
+	}
+	@include size(sm){
+		padding: 50px;
+		margin-top: 50px;
+		flex-direction: column;
+	}
+	& .ages p{
+		@extend %font-condensed;
+		font-size: 72px;
+		color: #D1A954;
+		@include size(sm){
+			font-size: 48px;
+		}
+		@include size(md){
+			font-size: 46px;
+		}
+	}
+	& .bestmoments {
+		display: flex;
+		flex-direction: column;
+		@include size(md){
+			margin-left: 20px;
+		}
+		& p{
+			width: 500px;
+			font-family: "Open sans",sans-serif;
+			font-weight: bold;
+			color: white;
+			text-transform: none;
+			font-size: 36px;
+			@include size(sm){
+				text-align: center;
+			}
+		}
+		& .stars{
+			@extend %font-condensed;
+			font-size: 36px;
+			color: #D1A954;
+			margin: 0 0 15px 0;
+			@include size(sm){
+				text-align: center;
+			}
+		}
+	}
+}

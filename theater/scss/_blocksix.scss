@@ -1,0 +1,168 @@
+// >= 992px
+.blocksix {
+	margin: auto;
+	margin-top: 50px;
+	@include size(xl){
+		max-width: 1200px
+	}
+	& h1 {
+		@extend %font-condensed;
+		font-size: 48px;
+		font-weight: 300;
+		text-align: center;
+		padding-bottom: 50px;
+		& span {
+			color: #d1a954;
+		}
+	}
+	& .infoform {
+		margin: auto;
+		& .infocontacts {
+			margin: auto;
+			@extend %font-condensed;
+			@include size(xl){
+				font-size: 16px;
+				text-align: center;
+				padding-top: 50px;
+			}
+			@include size(lg){
+				font-size: 16px;
+				text-align: center;
+				padding-top: 50px;
+			}
+			@include size(md){
+				font-size: 26px;
+				text-align: center;
+				padding-top: 30px;
+			}
+			@include size(sm){
+				font-size: 26px;
+				text-align: center;
+				padding-top: 30px;
+			}
+			
+		}
+		& form {
+			display: grid;
+			width: auto;
+			@include size(xl) {
+				padding-bottom: 50px;
+				grid-template-areas:
+					"name company message"
+					"number mail message"
+					"tex tex button";
+				grid-template-rows: 35px 35px 50px;
+				grid-template-columns: 180px 180px 310px;
+				gap: 30px;
+			}
+			@include size(lg) {
+				grid-template-areas:
+					"name company message"
+					"number mail message"
+					"tex tex button";
+				grid-template-rows: 35px 35px 50px;
+				grid-template-columns: 180px 180px 310px;
+				gap: 30px;
+			}
+
+			@include size(md) {
+				grid-template-areas:
+					"name company"
+					"number mail"
+					"message message"
+					"tex tex"
+					"button button";
+				grid-template-rows: 80px 80px 160px 80px;
+				grid-template-columns: 280px 280px;
+				gap: 30px;
+			}
+			@include size(sm) {
+				grid-template-areas:
+					"name company"
+					"number mail"
+					"message message"
+					"tex tex"
+					"button button";
+				grid-template-rows: 80px 80px 160px 80px;
+				grid-template-columns: 200px 200px;
+				gap: 30px;
+			}
+			& input,
+			textarea {
+				background-color: #444444;
+				border: 1px solid #616161;
+				font-family: "Open sans", sans-serif;
+				font-size: 12px;
+				font-weight: 600;
+				font-style: normal;
+				color: #989898;
+				padding-left: 14px;
+			}
+			& input[name="name"] {
+				grid-area: name;
+			}
+			& input[name="company"] {
+				grid-area: company;
+			}
+			& input[name="number"] {
+				grid-area: number;
+			}
+			& input[name="mail"] {
+				grid-area: mail;
+			}
+			& textarea[name="message"] {
+				grid-area: message;
+				padding-top: 14px;
+			}
+			& input[type="submit"] {
+				grid-area: button;
+				background-color: #d1a954;
+				@extend %font-condensed;
+				padding: 0;
+				text-align: center;
+				border: none;
+				@include size(xl) {
+					font-size: 18px;
+					margin: 0 0 0 auto;
+					width: 190px;
+					height: 50px;
+				}
+				@include size(lg) {
+					font-size: 18px;
+					margin: 0 0 0 auto;
+					width: 190px;
+					height: 50px;
+				}
+				@include size(md) {
+					font-size: 28px;
+					margin: auto;
+					width: 240px;
+					height: 80px;
+				}
+				@include size(sm) {
+					font-size: 28px;
+					margin: 20px auto 0 auto;
+					width: 240px;
+					height: 80px;
+				}
+			}
+			& p {
+				grid-area: tex;
+				font-family: "Open sans", sans-serif;
+				font-weight: 400;
+				font-style: normal;
+				color: #989898;
+				@include size(xl){
+					font-size: 12px;
+				}
+				@include size(lg){
+					font-size: 12px;
+				}
+				@include size(md){
+					font-size: 18px;
+					text-align: justify;
+				}
+			}
+		}
+	}
+}

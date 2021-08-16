@@ -1,0 +1,282 @@
+%font-condensed {
+	font-family: "Open Sans Condensed", sans-serif;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.blockone {
+	background: url(../img/Rectangle3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	@include size(xl) {
+		height: 1045px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	@include size(lg) {
+		height: 1045px;
+	}
+	@include size(md) {
+		height: 800px;
+	}
+	@include size(sm) {
+		height: 600px;
+	}
+}
+
+.contacts {
+	height: inherit;
+	background-color: rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 20px;
+	align-items: center;
+	@include size(sm) {
+		display: none;
+	}
+	& h2 {
+		width: 50px;
+		transform: rotate(-90deg);
+		white-space: nowrap;
+		@extend %font-condensed;
+		@include size(xl) {
+			font-size: 20px;
+		}
+		@include size(lg) {
+			font-size: 20px;
+		}
+		@include size(md) {
+			font-size: 20px;
+			margin-bottom: 25px;
+		}
+	}
+	& .justline {
+		background-color: white;
+		margin: 25px 0 15px 0;
+		border: 1px solid white;
+		@include size(xl) {
+			display: block;
+			height: 120px;
+		}
+		@include size(lg) {
+			display: block;
+			height: 90px;
+		}
+		@include size(md) {
+			display: block;
+			height: 90px;
+		}
+	}
+}
+
+.burger {
+	display: none;
+	@include size(sm) {
+		display: flex;
+	}
+	@include size(md) {
+		display: flex;
+	}
+	& div{
+		height: 4px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: white;
+	}
+	padding: 0;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-between;
+	z-index: 50;
+	width: 40px;
+	height: 40px;
+	// background-color: red;
+	position: absolute;
+	left: auto;
+	right: 50px;
+	top: 50px;
+}
+
+.navme {
+	
+	& .nav-link {
+		@extend %font-condensed;
+		text-align: center;
+		padding: 40px 0 0 0;
+		&:hover{
+			color: #d1a954;
+		}
+	}
+	@include size(xl) {
+		font-size: 16px;
+		display: flex !important;
+	}
+	@include size(lg) {
+		font-size: 18px;
+		display: flex !important;
+	}
+	@include size(md) {
+		position: absolute;
+		background-color: #333333;
+		padding-bottom: 40px;
+		display: none;
+		font-size: 28px;
+		white-space: nowrap;
+	}
+	@include size(sm) {
+		position: absolute;
+		background-color: #333333;
+		padding-bottom: 40px;
+		display: none;
+		font-size: 28px;
+		white-space: nowrap;
+	}
+}
+
+.visibleUl {
+	display: block;
+}
+
+.contenttwo {
+	@include size(xl) {
+		display: flex;
+		align-items: center;
+		padding-top: 220px;
+	}
+	.big {
+		@include size(xl) {
+			margin-right: 0;
+		}
+		@include size(lg) {
+			margin-top: 230px;
+			padding-left: 30px;
+		}
+		@include size(md) {
+			margin-top: 240px;
+			padding-left: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		@include size(sm) {
+			margin-top: 190px;
+			padding: 0 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		& h1 {
+			@extend %font-condensed;
+			color: white;
+			@include size(lg) {
+				font-size: 64px;
+				text-align: start;
+			}
+			@include size(md) {
+				font-size: 78px;
+				text-align: center;
+			}
+			@include size(sm) {
+				font-size: 68px;
+				text-align: center;
+			}
+		}
+		& p {
+			font-size: "Open-sans", sans-serif;
+			font-weight: 400;
+			color: white;
+			@include size(xl) {
+				max-width: 500px;
+				font-size: 16px;
+				text-align: start;
+				margin: 30px auto;
+			}
+			@include size(lg) {
+				font-size: 16px;
+				text-align: start;
+				margin: 30px auto;
+			}
+			@include size(md) {
+				font-size: 22px;
+				text-align: justify;
+				margin: 40px auto;
+			}
+			@include size(sm) {
+				font-size: 22px;
+				text-align: justify;
+				margin: 20px auto;
+			}
+		}
+		.afisha {
+			@extend %font-condensed;
+			background-color: #d1a954;
+			border: none;
+			@include size(xl) {
+				width: 160px;
+				height: 50px;
+			}
+			@include size(lg) {
+				width: 160px;
+				height: 50px;
+			}
+			@include size(md) {
+				width: 260px;
+				height: 100px;
+			}
+			@include size(sm) {
+				margin-top: 10px;
+				width: 200px;
+				height: 50px;
+				font-size: 28px;
+			}
+			&:hover {
+				background-color: gold;
+			}
+		}
+	}
+
+	.scala {
+		padding: 0;
+		@include size(xl) {
+			display: block;
+			margin-left: 0;
+		}
+		@include size(lg) {
+			display: none;
+		}
+		@include size(md) {
+			display: none;
+		}
+		@include size(sm) {
+			display: none;
+		}
+		// flex-direction: column;
+		// justify-content: flex-start;
+		// align-items: flex-start;
+		& .imgscala {
+			width: 350px;
+			margin: 0 auto;
+			& img {
+				width: 350px;
+			}
+		}
+		& .buttonblock {
+			width: 350px;
+			display: flex;
+			margin: 0 auto;
+			justify-content: space-between;
+			& .sbut {
+				@extend %font-condensed;
+				font-size: 18px;
+				background: rgba(255, 255, 255, 0);
+				margin: 20px 0;
+				&:hover {
+					color: gold;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+
+.blocktwo {
+	padding-top: 50px;
+	@include size(xl){
+		padding: 50px 50px 0 50px;
+	}
+	& h1 {
+		@extend %font-condensed;
+		font-size: 48px;
+		font-weight: 300;
+		text-align: center;
+		padding-bottom: 30px;
+		& span {
+			color: #d1a954;
+		}
+	}
+	& .infoblock {
+		display: flex;
+		justify-content: center;
+		& .bestblock {
+			width: 445px;
+			& article {
+				@extend %font-condensed;
+				font-size: 21px;
+				@include size(sm){
+					text-align: center;
+					font-size: 30px;
+				}
+			}
+			& p {
+				font-family: "Open sans", sans-serif;
+				color: white;
+				font-size: 14px;
+				font-weight: normal;
+				text-transform: none;
+				@include size(sm){
+					text-align: justify;
+					font-size: 18px;
+					margin-top: 10px;
+				}
+			}
+		}
+		& .numberblock {
+			width: 255px;
+			display: flex;
+			flex-direction: column;
+			@include size(sm){
+				width: auto;
+			}
+			& span {
+				color: #d1a954;
+			}
+			& article,
+			img,
+			p {
+				margin: 0 auto 15px 0;
+				@include size(sm){
+					margin: 10px auto;
+				}
+			}
+			& article {
+				@extend %font-condensed;
+				font-size: 21px;
+				@include size(sm){
+					font-size: 30px;
+					margin-top: 20px;
+				}
+			}
+			& img {
+				width: 70px;
+			}
+			& p {
+				@extend %font-condensed;
+				font-size: 14px;
+				font-weight: normal;
+				@include size(sm){
+					font-size: 20px;
+				}
+			}
+		}
+		& .imgblock2 {
+			width: 350px;
+			@include size(xl) {
+				display: block;
+			}
+			@include size(lg) {
+				display: none;
+			}
+			@include size(md){
+				display: none;
+			}
+			@include size(sm){
+				display: none;
+			}
+		}
+	}
+}

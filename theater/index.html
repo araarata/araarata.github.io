@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<div class="container-fluid mycontainer">
+		<!-- <div class="row">
+			<div class="blockone col-lg-12 col-md-12 row col-xl-12 col-xs-12">
+				<div class="contacts col-lg-2 col-md-2 col-xl-2">
+					<h2>контактная информация</h2>
+					<div class="justline "></div>
+					<div class="fa fa-instagram "></div>
+					<div class="fa fa-facebook "></div>
+					<div class="fa fa-vk "></div>
+					<div class="fa fa-youtube "></div>
+				</div>
+				<div class="contentone col-lg-10 col-md-10 col-xl-10 col-sm-12">
+					<ul class="nav navbo navme row col-lg-12 col-md-12 col-sm-12">
+						<li class="nav-item col-lg-2 col-md-4 col-xl-2 col-sm-4">
+							<a class="nav-link active" aria-current="page" href="#">Главная</a>
+						</li>
+						<li class="nav-item col-lg-2 col-md-4 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">о театре</a>
+						</li>
+						<li class="nav-item col-lg-3 col-md-4 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">наши постановки</a>
+						</li>
+						<li class="nav-item col-lg-3 col-md-4 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">партнеры театра</a>
+						</li>
+						<li class="nav-item col-lg-2 col-md-4 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">контакты</a>
+						</li>
+						<li class="nav-item 4ol-lg-12 col-md-4 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">+7 495 123-45-67</a>
+						</li>
+					</ul>
+					<div class="contenttwo row col-lg-12 col-md-12 col-xl-12 col-xs-12">
+						<div class="big col-lg-12 col-md-12 col-xl-5 col-xs-12">
+							<h1>Большой театр</h1>
+							<p class="col-lg-9 col-md-12 mx-0 col-xl-12">Большо́й теа́тр — петербургский театр, существовавший
+								в
+								1784—1886 годах, с
+								1886 года —
+								Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из
+								крупнейших театральных зданий в Европе XVIII.</p>
+							<button class="afisha col-md-6">афиша</button>
+						</div>
+						<div class="scala col-lg-12 col-md-12 col-xl-5">
+							<div class="imgscala"><img src="/img/image 3.png" alt="image_3"></div>
+							<div class="buttonblock">
+								<div class="sbut ">&larr; пред.</div>
+								<div class="sbut">след. &rarr;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div class="row">
+			<div class="blockone col-lg-12 col-md-12 row col-xl-12 col-xs-12">
+				<div class="burger" onclick="visibleMenu()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="contacts col-lg-2 col-md-1 col-xl-2">
+					<h2>контактная информация</h2>
+					<div class="justline "></div>
+					<div class="fa fa-instagram "></div>
+					<div class="fa fa-facebook "></div>
+					<div class="fa fa-vk "></div>
+					<div class="fa fa-youtube "></div>
+				</div>
+				<div class="contentone col-lg-10 col-xl-10 col-sm-12 col-md-11">
+					<ul class="nav navbo navme row col-lg-12 col-md-11 col-sm-12">
+						<li class="nav-item col-lg-2 col-md-12 col-xl-2 col-sm-4">
+							<a class="nav-link active" aria-current="page" href="#">Главная</a>
+						</li>
+						<li class="nav-item col-lg-2 col-md-12 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">о театре</a>
+						</li>
+						<li class="nav-item col-lg-3 col-md-12 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">наши постановки</a>
+						</li>
+						<li class="nav-item col-lg-3 col-md-12 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">партнеры театра</a>
+						</li>
+						<li class="nav-item col-lg-2 col-md-12 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">контакты</a>
+						</li>
+						<li class="nav-item 4ol-lg-12 col-md-12 col-xl-2 col-sm-4">
+							<a class="nav-link" href="#">+7 495 123-45-67</a>
+						</li>
+					</ul>
+					<div class="contenttwo row col-lg-12 col-md-12 col-xl-12 col-xs-12">
+						<div class="big col-lg-12 col-md-12 col-xl-5 col-xs-12">
+							<h1>Большой театр</h1>
+							<p class="col-lg-9 col-md-12 mx-0 col-xl-12">Большо́й теа́тр — петербургский театр, существовавший
+								в
+								1784—1886 годах, с
+								1886 года —
+								Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из
+								крупнейших театральных зданий в Европе XVIII.</p>
+							<button class="afisha col-md-6">афиша</button>
+						</div>
+						<div class="scala col-lg-12 col-md-12 col-xl-5">
+							<div class="imgscala"><img src="/img/image 3.png" alt="image_3"></div>
+							<div class="buttonblock">
+								<div class="sbut ">&larr; пред.</div>
+								<div class="sbut">след. &rarr;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="blocktwo col-lg-12">
+				<h1 class="col-lg-12"><span>о</span> театре</h1>
+				<div class="infoblock row col-lg-12">
+					<div class="bestblock col-sm-12">
+						<article>самый лучший театр спб</article>
+						<p>Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в
+							1775
+							году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично
+							наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору
+							Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В.
+							фон
+							Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других
+							свидетельствах, годом открытия можно считать 1784 год.</p>
+					</div>
+					<div class="numberblock col-sm-12">
+						<article>немного о цифрах</article>
+						<img src="/img/numberblock1.png" alt="numberblock1">
+						<p><span>1600</span> посадочных мест</p>
+						<img src="/img/numberblock2.png" alt="numberblock2">
+						<p><span>350</span> лет истории</p>
+					</div>
+					<img class="imgblock2" src="/img/imgblock2.png" alt="imgblock2">
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="blockthree col-lg-12">
+				<h1 class="col-lg-12"><span>наши</span> постановки</h1>
+				<div class="scrollblock col-lg-10 col-md-10 col-sm-10">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+					<img src="/img/blockthree1.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="blockfour col-sm-10 col-xl-10 col-lg-10 col-md-10 ">
+				<div class="ages c">
+					<p>2018<br>2019<br>2020</p>
+				</div>
+				<div class="bestmoments">
+					<div class="stars">
+						&#9733; &#9733; &#9733; &#9733; &#9733;
+					</div>
+					<p>Лучший театр
+						по мнению театральных критиков Парижа</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="blockfive col-lg-12">
+				<h1><span>партнеры</span> театра</h1>
+				<div class="gazprom row col-lg-12">
+					<img class="logo col-lg-3 col-md-3 col-xl-3 col-sm-6" src="/img/logo.png" alt="logo.png">
+					<img class="logo col-lg-3 col-md-3 col-xl-3 col-sm-6" src="/img/logo.png" alt="logo.png">
+					<img class="logo col-lg-3 col-md-3 col-xl-3 col-sm-6" src="/img/logo.png" alt="logo.png">
+					<img class="logo col-lg-3 col-md-3 col-xl-3 col-sm-6" src="/img/logo.png" alt="logo.png">
+					<img class="logo col-lg-3 col-md-3 col-xl-3 col-sm-6" src="/img/logo.png" alt="logo.png">
+					<img class="logo col-lg-3 col-md-3 col-xl-3 col-sm-6" src="/img/logo.png" alt="logo.png">
+					<img class="logo col-lg-3 col-md-3 col-xl-3 col-sm-6" src="/img/logo.png" alt="logo.png">
+					<img class="logo col-lg-3 col-md-3 col-xl-3 col-sm-6" src="/img/logo.png" alt="logo.png">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="blocksix row col-lg-12">
+				<h1><span>стать</span> меценатом</h1>
+				<div class="infoform row col-lg-12 col-md-12">
+					<form action="">
+						<input type="text" name="name" placeholder="Имя">
+						<input type="text" name="company" placeholder="Компания">
+						<input type="text" name="number" placeholder="Телефон">
+						<input type="text" name="mail" placeholder="E-mail">
+						<textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+						<p>* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы
+							гарантируем,
+							и
+							защищаем персональные данные согласно законку ФЗ-52.</p>
+						<input type="submit">
+					</form>
+					<div class="infocontacts row col-lg-12">
+						<p class="col-lg-6 col-md-4">+7 (812) 123-45-55</p>
+						<p class="col-lg-6 col-md-4">info@theater.ru</p>
+						<p class="col-lg-6 col-md-4">+7 (812) 123-45-66</p>
+						<p class="col-lg-6 col-md-12">г. санкт-петербург, невский 140</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<footer class="col-lg-12 col-md-12 col-xl-12">
+				<hr>
+				<div class="textabout ">
+					<p>(с) Все права защищены. Большой театр. 2020</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+	<script src="/js/main.js"></script>
+</body>
+
+</html>

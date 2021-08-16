@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap");
+
+@import "_mixins";
+@import "_icons";
+@import "_blockone";
+@import "_blocktwo";
+@import "_blockthree";
+@import "_blockfour";
+@import "_blockfive";
+@import "_blocksix";
+@import "_footer";
+
+* {
+	margin: 0 auto;
+}
+
+.container-fluid {
+	background: #333333;
+	@include size(xl) {
+		max-width: 1920px;
+	}
+}
+
+// @media (min-width: 1200px) {
+// 	.mycontainer{
+// 		width: 1920px;
+// 	}
+// }
+// @media (min-width: 768px) and (max-width: 991px) {
+// 	.mycontainer{
+// 		width: 1920px;
+// 	}
+// }
+// @media (min-width: 576px) and (max-width: 991px) {
+// 	.mycontainer{
+// 		width: 1920px;
+// 	}
+// }
