@@ -41,7 +41,7 @@ function numberFunc() {
 	}
 	document.getElementById('ul1').innerHTML = ind;
 
-	document.querySelector('.image').innerHTML = `<img src="img/${mas[a].img}" alt="">`
+	document.querySelector('.image').innerHTML = `<img src="${mas[a].img}" alt="">`
 
 	mas.splice(a, 1)
 	if (mas.length==0){
